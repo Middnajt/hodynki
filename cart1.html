@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dark Bytes</title>
+  <link rel="stylesheet" href="cart-product-style.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+  <nav>
+    <div class="navbar">
+      <div class="container nav-container">
+        <div class="cart">
+          <a href="#"><img src="images/cart.png"></a>
+        </div>
+        <div class="logo">
+          <a href="index.html"><img src="images/logo1.png"></a>
+        </div>
+        <div class="home">
+          <a href="index.html"><img src="images/home.png"></a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <div class="carthead">
+    <h1>K<span>oší</span>k</h1>
+    <div class="product-details">
+      <div class="product-img">
+        <img src="product-images/id1-1.png">
+      </div>
+      <div class="product-name">
+        <h3>HAL3000 Mega Gamer Pro 6600</h3>
+      </div>
+      <div class="product-price">
+        <h3>27990,00 Kč</h3>
+      </div>
+    </div>
+  </div>
+  <div class="full-price">
+    <p>Celková cena → 27990,00 Kč<p>
+    <h4><button>Přejít k platbě</button></h4>
+  </div>
+ 
+  <footer>
+    <div id="footer">
+      <div class="footer-content">
+        <img src="images/line.png">
+        <ul class="support">
+          <li><a href="#">PODPORA</a></li>
+        </ul>      
+        <p>Nejspolehlivější přeprodejce sestav a komponent.</p>
+        <ul class="socials">
+          <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+          <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+          <li><a href="#"><i class="fa fa-reddit"></i></a></li>
+          <li><a href="#"><i class="fa fa-youtube"></i></a></li>
+          <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+        </ul>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2024 </span>
+        <a href="#">Oficiální e-shopová stránka Dark Bytes</a>.
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      const checkbox = document.getElementById('checkbox');
+      const navbar = document.querySelector('.navbar');
+      const logo = document.getElementById('logo');
+
+      checkbox.addEventListener('change', function() {
+        if (this.checked) {
+          navbar.style.transition = '0.5s';
+          navbar.classList.add('active');
+          // Změna logo, když je menu aktivní
+          logo.src = 'images/logo.png';
+        } else {
+          navbar.style.transition = '0.5s';
+          navbar.classList.remove('active');
+          // Návrat původního loga, když menu není aktivní
+          logo.src = 'images/logo1.png';
+        }
+      });
+    });
+  </script>
+</body>
+</html>

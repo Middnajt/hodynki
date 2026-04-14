@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dark Bytes</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  
+</head>
+<body>
+  <nav>
+    <div class="navbar">
+      <div class="container nav-container">
+        <input class="checkbox" type="checkbox" name="" id="checkbox"/>
+        <div class="hamburger-lines">
+          <span class="line line1"></span>
+          <span class="line line2"></span>
+          <span class="line line3"></span>
+        </div> 
+        <div class="logo">
+          <a href="#"><img src="images/logo.png"></a>
+        </div>
+        <div class="menu-items">
+          <li><a href="">Domů</a></li>
+          <li><a href="#best-sellers">Rolex</a></li>
+          <li><a href="#other-systems">Patek Philippe</a></li>
+          <li><a href="#about">Cartier</a></li>
+          <li><a href="#components">Bulgari</a></li>
+          <div class="cart">
+          <li><a href="cart.html">Shopping Cart</a></li>
+          <li><a href="login.html">Customer Account</a></li>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+<div id="best-sellers">
+  <div id="products-1">
+    <div class="container">
+      <h1 class="sub-title">Iconic Pieces</h1>
+      <p>Defined by precision. Chosen for excellence</p>
+    </div>
+  </div>
+  
+  <div class="products-list-1">
+    <div class="products-1">
+      <a href="product1.html">
+        <img src="images/HAL3000-MEGA-Gamer-Pro-6600.png">
+        <div class="content">
+          <h2>HAL3000 MEGA Gamer Pro 6600</h2>
+          <p>27990,00 Kč</p>
+        </div>
+      </a>
+    </div>
+
+    <div class="products-1">
+      <a href="product2.html">
+        <img src="images/AlzaPC-GameBox-Prime-i5-RTX4060-32GB-RAM.png">
+        <div class="content">
+          <h2>AlzaPC GameBox Prime i5 RTX4060 32GB RAM</h2>
+          <p>26990,00 Kč</p>
+        </div>
+      </a>
+    </div>
+  
+    <div class="products-1">
+      <a href="product3.html">
+        <img src="images/CZC-gaming-paladin-gc216-cs2-reflex-edition.png">
+        <div class="content">
+          <h2>CZC Gaming Paladin GC216</h2>
+          <p>34990,00 Kč</p>
+        </div>
+      </a>
+    </div>
+  </div>
+</div>
+
+<div id="other-systems">
+  <div id="products">
+    <div class="container">
+      <h1 class="sub-title">Ostatní Sestavy</h1>
+    </div>
+  </div>
+
+  <div style="text-align: center;">
+    <button class="sort-button" onclick="sortByNameAZ()">Název (A-Z)</button>
+    <button class="sort-button" onclick="sortByNameZA()">Název (Z-A)</button>
+    <button class="sort-button" onclick="sortByPriceAsc()">Cena (vzestupně ↑)</button>
+    <button class="sort-button" onclick="sortByPriceDesc()">Cena (sestupně ↓)</button>
+  </div>
+
+  <div class="products-list"></div>
+</div>
+
+<div id="about">
+  <div class="about">
+    <div class="text-section">
+      <h1>O nás</h1>
+      <p>Zde se nacházíte na jediné oficiální e-shopové stránce Dark Bytes.</p>
+      <p>Tato stránka vznikla jako součást našeho školního projektu v předmětu programování.</p>
+      <p>V našem internetovém obchodě přeprodáváme PC sestavy od velkých značek. Například AlzaPC, CZC-Gaming a také třeba HAL3000, která se v posledních letech dostal do povědomí. Nabízíme širokou škálu počítačových komponentů.</p>
+      <p>V blízké době chystáme stavění počítačů na míru, které si budete moci nechat složit našemi odborníky. Vše s Vámi prodiskutujeme a doručíme Vám sestavu přimo domů.</p>
+      <p class="end">Děkujeme za návštěvu.</p>
+    </div>
+  </div>
+</div>
+
+<div id="components">
+  <div id="products">
+    <div class="container">
+      <h1 class="sub-title">Komponenty</h1>
+    </div>
+  </div>
+  
+  <div style="text-align: center;">
+    <button class="filter-button" onclick="showAllProducts()">Vše</button>
+    <button class="filter-button" onclick="sortByComponent('case')">Skříň</button>
+    <button class="filter-button" onclick="sortByComponent('motherboard')">Základní deska</button>
+    <button class="filter-button" onclick="sortByComponent('processor')">Procesor</button>
+    <button class="filter-button" onclick="sortByComponent('gpu')">Grafická karta</button>
+    <button class="filter-button" onclick="sortByComponent('psu')">Zdroj</button>
+  </div>
+
+  <div class="products-list-3"></div>
+
+  <footer>
+    <div id="footer">
+      <div class="footer-content">
+        <img src="images/line.png">
+        <ul class="support">
+          <li><a href="#">PODPORA</a></li>
+        </ul>      
+        <p>Nejspolehlivější přeprodejce sestav a komponent.</p>
+        <ul class="socials">
+          <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+          <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+          <li><a href="#"><i class="fa fa-reddit"></i></a></li>
+          <li><a href="#"><i class="fa fa-youtube"></i></a></li>
+          <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+        </ul>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2024 </span>
+        <a href="#">Oficiální e-shopová stránka Dark Bytes</a>.
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      const checkbox = document.getElementById('checkbox');
+      const navbar = document.querySelector('.navbar');
+      const body = document.body;
+
+      checkbox.addEventListener('change', function() {
+        if (this.checked) {
+          navbar.style.transition = '0.5s';
+          navbar.classList.add('active');
+        } else {
+          navbar.style.transition = '0.5s';
+          navbar.classList.remove('active');
+        }
+      });
+    });
+
+    // Simulace dat - pole produktů
+    let products = [
+    { id: 4, name: "AlzaPC GameBox Core i7 RX6800 32GB RAM", price: 28990.00 },
+    { id: 5, name: "AlzaPC VisionBox Ultimate Studio Edice", price: 106990.00 },
+    { id: 6, name: "CZC Gaming Paladin GC137", price: 64990.00 },
+    { id: 7, name: "CZC Gaming Paladin GC222", price: 42990.00 },
+    ];
+
+    // Funkce pro zobrazení produktů
+    function displayProducts(products) {
+      const productList = document.querySelector('.products-list');
+      productList.innerHTML = '';
+
+      products.forEach(product => {
+        const productItem = document.createElement('div');
+        productItem.classList.add('products');
+        productItem.innerHTML = `
+          <a href="product${product.id}.html"><img src="images/${product.name.toLowerCase().replace(/ /g, '-')}.png">
+            <div class="content">
+              <h2>${product.name}</h2>
+              <p>${product.price.toFixed(2)} Kč</p>
+            </div>
+          </a>
+        `;
+        productList.appendChild(productItem);
+      });
+    }
+
+    // Výchozí zobrazení produktů
+    displayProducts(products);
+
+    // Funkce pro řazení produktů podle názvu (od A do Z)
+    function sortByNameAZ() {
+      products.sort((a, b) => a.name.localeCompare(b.name));
+      displayProducts(products);
+    }
+
+    // Funkce pro řazení produktů podle názvu (od Z do A)
+    function sortByNameZA() {
+      products.sort((a, b) => b.name.localeCompare(a.name));
+      displayProducts(products);
+    }
+
+    // Funkce pro řazení produktů podle ceny (vzestupně)
+    function sortByPriceAsc() {
+      products.sort((a, b) => a.price - b.price);
+      displayProducts(products);
+    }
+
+    // Funkce pro řazení produktů podle ceny (sestupně)
+    function sortByPriceDesc() {
+      products.sort((a, b) => b.price - a.price);
+      displayProducts(products);
+    }
+
+    let products100 = [
+    { id: 8, name: "ASUS PRIME B760M A WIFI D4", component: "motherboard", price: 3490.00 },
+    { id: 9, name: "Fractal Design North Chalk", component: "case", price: 3690.00 },
+    { id: 10, name: "AMD Ryzen 5 7600", component: "processor", price: 5190.00 },
+    { id: 11, name: "Corsair RM650", component: "psu", price: 2190.00 },
+    { id: 12, name: "Fractal Design Meshify 2 XL", component: "case", price: 5590.00 },
+    { id: 13, name: "AMD Ryzen 7 7800X3D", component: "processor", price: 10190.00 },
+    { id: 14, name: "Intel Core i7 14700KF", component: "processor", price: 11190.00 },
+    { id: 15, name: "Corsair CV650 dual EPS", component: "psu", price: 1590.00 },
+    { id: 16, name: "SAPPHIRE PURE Radeon RX 7700 XT GAMING OC 12GB", component: "gpu", price: 11790.00 },
+    { id: 17, name: "SAPPHIRE PULSE Radeon RX 7900 GRE GAMING OC 16G", component: "gpu", price: 15690.00 },
+    { id: 18, name: "NZXT H5 Elite", component: "case", price: 3190.00 },
+    { id: 19, name: "MSI MAG B650 TOMAHAWK WIFI", component: "motherboard", price: 4990.00 },
+];
+
+    // Funkce pro zobrazení produktů podle komponenty
+    function displayComponentProducts(products) {
+      const productList = document.querySelector('.products-list-3');
+      productList.innerHTML = '';
+
+      products.forEach(product => {
+        const productItem = document.createElement('div');
+        productItem.classList.add('products');
+        productItem.innerHTML = `
+          <a href="product${product.id}.html"><img src="images/${product.name.toLowerCase().replace(/ /g, '-')}.png">
+            <div class="content">
+              <h2>${product.name}</h2>
+              <p>${product.price.toFixed(2)} Kč</p>
+            </div>
+          </a>
+        `;
+        productList.appendChild(productItem);
+      });
+    }
+
+    // Výchozí zobrazení všech produktů
+    displayComponentProducts(products100);
+
+    // Funkce pro zobrazení všech produktů
+    function showAllProducts() {
+      displayComponentProducts(products100);
+    }
+
+    // Funkce pro zobrazení produktů podle vybrané komponenty
+
+    function sortByComponent(component) {
+
+      if (component === 'all') {
+        showAllProducts();
+      } else {
+        const filteredProducts = products100.filter(product => product.component === component);
+        displayComponentProducts(filteredProducts);
+      }
+    }
+
+    document.addEventListener('DOMContentLoaded', function() {
+      const sortButtons = document.querySelectorAll('.sort-button');
+
+      sortButtons.forEach(button => {
+        button.addEventListener('click', function() {
+          // Odstranění tloušťky písma u všech tlačítek
+          sortButtons.forEach(btn => {
+            btn.style.fontWeight = 'normal';
+          });
+          
+          // Nastavení tloušťky písma pouze pro kliknuté tlačítko
+          this.style.fontWeight = 'bold';
+
+
+        });
+      });
+    });
+
+    document.addEventListener('DOMContentLoaded', function() {
+    const menuItems = document.querySelectorAll('.menu-items a');
+
+    menuItems.forEach(item => {
+      item.addEventListener('click', function(event) {
+        event.preventDefault(); // Zabraňuje výchozímu chování odkazu
+
+        const targetId = this.getAttribute('href').substring(1); // Získání ID cílového elementu bez #
+        const targetElement = document.getElementById(targetId);
+
+        if (targetElement) {
+          targetElement.scrollIntoView({ behavior: 'smooth' }); // Plynulý posun na cílový element
+        }
+      });
+    });
+  });
+  </script>
+</body>
+</html>

@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dark Bytes</title>
+  <link rel="stylesheet" href="product-style.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+  <nav>
+    <div class="navbar">
+      <div class="container nav-container">
+        <div class="cart">
+          <a href="#"><img src="images/cart.png"></a>
+        </div>
+        <div class="logo">
+          <a href="index.html"><img src="images/logo1.png"></a>
+        </div>
+        <div class="home">
+          <a href="index.html"><img src="images/home.png"></a>
+        </div>
+      </div>
+    </div>
+  </nav>
+  
+  <div id="slider">
+    <input type="radio" name="slider" id="slide1" checked>
+    <input type="radio" name="slider" id="slide2">
+    <input type="radio" name="slider" id="slide3">
+    <input type="radio" name="slider" id="slide4">
+    <div id="slides">
+       <div id="overflow">
+          <div class="inner">
+             <div class="slide slide_1">
+                <div class="slide-content">
+                  <img src="product-images/id10-1.png">
+                </div>
+             </div>
+             <div class="slide slide_2">
+                <div class="slide-content">
+                  <img src="product-images/id10-2.png">
+                </div>
+             </div>
+             <div class="slide slide_3">
+                <div class="slide-content">
+                  <img src="product-images/id10-3.png">
+                </div>
+             </div>
+             <div class="slide slide_4">
+                <div class="slide-content">
+                  <img src="product-images/id10-4.png">
+                </div>
+             </div>
+          </div>
+       </div>
+    </div>
+    <div id="controls">
+       <label for="slide1"></label>
+       <label for="slide2"></label>
+       <label for="slide3"></label>
+       <label for="slide4"></label>
+    </div>
+    <div id="bullets">
+       <label for="slide1"></label>
+       <label for="slide2"></label>
+       <label for="slide3"></label>
+       <label for="slide4"></label>
+    </div>
+ </div>
+
+ <div class="name">
+  <h1 class="left">AMD Ryzen 5 7600</h1>
+  <h2 class="right">5190,00 Kč</h2>
+  <p>Cena bez DPH - 4411,50 Kč</p>
+  <a href="#" class="btn"><h3><strong>Do košíku</strong></h3></a>
+ </div>
+
+
+
+<div class="parameter">
+  <h3>Parametry a specifikace</h3>
+  <div class="board">
+    <h3>Řada</h3>
+    <p class="left">Řada procesoru</p>
+    <p class="right">AMD Ryzen 5</p>
+    <p class="left">Socket</p>
+    <p class="right">AMD AM5</p>
+    <p class="left">Modelové označení</p>
+    <p class="right">AMD Ryzen 5 7600</p>
+    <p class="left">Mikroarchitektura</p>
+    <p class="right">Zen 4</p>
+    <p class="left">Kódový název procesoru</p>
+    <p class="right">Raphael</p>
+    <p class="left">Typ boxového chladiče</p>
+    <p class="right">Wraith Stealth</p>
+
+    <h3>Počet jader</h3>
+    <p class="left">Počet jader procesoru</p>
+    <p class="right">6×</p>
+    <p class="left">Počet vláken</p>
+    <p class="right">12×</p>
+
+    <h3>Frekvence</h3>
+    <p class="left">Frekvence procesoru</p>
+    <p class="right">3,8 GHz (3,8 GHz)</p>
+    <p class="left">Maximální frekvence (OC)</p>
+    <p class="right">5,1 GHz (5 100 MHz)</p>
+
+    <h3>Podpora RAM</h3>
+    <p class="left">Podporovaný typ paměti</p>
+    <p class="right">DDR5</p>
+    <p class="left">Maximální počet kanálů</p>
+    <p class="right">2×</p>
+
+    <h3>Integrovaná grafická karta</h3>
+    <p class="left">Typ integrované grafické karty</p>
+    <p class="right">AMD Radeon Graphics</p>
+
+    <h3>Pokročilé parametry</h3>
+    <p class="left">Funkce</p>
+    <p class="right">Automatické přetaktování, Virtualizace, Multi-Threading, Chladič v balení</p>
+    <p class="left">TDP</p>
+    <p class="right">65 W</p>
+    <p class="left">Výrobní technologie</p>
+    <p class="right">5 nm</p>
+    <p class="left">L2 cache</p>
+    <p class="right">6 MB</p>
+    <p class="left">L3 cache</p>
+    <p class="right">32 MB</p>
+  </div>
+</div>
+
+ 
+  <footer>
+    <div id="footer">
+      <div class="footer-content">
+        <img src="images/line.png">
+        <ul class="support">
+          <li><a href="#">PODPORA</a></li>
+        </ul>      
+        <p>Nejspolehlivější přeprodejce sestav a komponent.</p>
+        <ul class="socials">
+          <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+          <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+          <li><a href="#"><i class="fa fa-reddit"></i></a></li>
+          <li><a href="#"><i class="fa fa-youtube"></i></a></li>
+          <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+        </ul>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2024 </span>
+        <a href="#">Oficiální e-shopová stránka Dark Bytes</a>.
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      const checkbox = document.getElementById('checkbox');
+      const navbar = document.querySelector('.navbar');
+      const logo = document.getElementById('logo');
+
+      checkbox.addEventListener('change', function() {
+        if (this.checked) {
+          navbar.style.transition = '0.5s';
+          navbar.classList.add('active');
+          // Změna logo, když je menu aktivní
+          logo.src = 'images/logo.png';
+        } else {
+          navbar.style.transition = '0.5s';
+          navbar.classList.remove('active');
+          // Návrat původního loga, když menu není aktivní
+          logo.src = 'images/logo1.png';
+        }
+      });
+    });
+  </script>
+</body>
+</html>

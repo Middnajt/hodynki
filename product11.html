@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dark Bytes</title>
+  <link rel="stylesheet" href="product-style.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+  <nav>
+    <div class="navbar">
+      <div class="container nav-container">
+        <div class="cart">
+          <a href="#"><img src="images/cart.png"></a>
+        </div>
+        <div class="logo">
+          <a href="index.html"><img src="images/logo1.png"></a>
+        </div>
+        <div class="home">
+          <a href="index.html"><img src="images/home.png"></a>
+        </div>
+      </div>
+    </div>
+  </nav>
+  
+  <div id="slider">
+    <input type="radio" name="slider" id="slide1" checked>
+    <input type="radio" name="slider" id="slide2">
+    <input type="radio" name="slider" id="slide3">
+    <input type="radio" name="slider" id="slide4">
+    <div id="slides">
+       <div id="overflow">
+          <div class="inner">
+             <div class="slide slide_1">
+                <div class="slide-content">
+                  <img src="product-images/id11-1.png">
+                </div>
+             </div>
+             <div class="slide slide_2">
+                <div class="slide-content">
+                  <img src="product-images/id11-2.png">
+                </div>
+             </div>
+             <div class="slide slide_3">
+                <div class="slide-content">
+                  <img src="product-images/id11-3.png">
+                </div>
+             </div>
+             <div class="slide slide_4">
+                <div class="slide-content">
+                  <img src="product-images/id11-4.png">
+                </div>
+             </div>
+          </div>
+       </div>
+    </div>
+    <div id="controls">
+       <label for="slide1"></label>
+       <label for="slide2"></label>
+       <label for="slide3"></label>
+       <label for="slide4"></label>
+    </div>
+    <div id="bullets">
+       <label for="slide1"></label>
+       <label for="slide2"></label>
+       <label for="slide3"></label>
+       <label for="slide4"></label>
+    </div>
+ </div>
+
+ <div class="name">
+  <h1 class="left">Corsair RM650</h1>
+  <h2 class="right">2190,00 Kč</h2>
+  <p>Cena bez DPH - 1861,50 Kč</p>
+  <a href="#" class="btn"><h3><strong>Do košíku</strong></h3></a>
+ </div>
+
+
+
+ <div class="parameter">
+  <h3>Parametry a specifikace</h3>
+  <div class="board">
+    <h3>Výkon a formát</h3>
+    <p class="left">Výkon</p>
+    <p class="right">650 W</p>
+    <p class="left">Formát</p>
+    <p class="right">ATX</p>
+    <p class="left">Verze ATX</p>
+    <p class="right">2.53</p>
+    <p class="left">Modulárnost</p>
+    <p class="right">Plně</p>
+
+    <h3>Výbava</h3>
+    <p class="left">Výbava a funkce</p>
+    <p class="right">Odpojitelné kabely, Tepelná regulace otáček, Síťový vypínač, Zero RPM mode</p>
+
+    <h3>Účinnost</h3>
+    <p class="left">Certifikace</p>
+    <p class="right">80 PLUS Gold</p>
+
+    <h3>Konektory</h3>
+    <p class="left">Konektory ATX 24pin</p>
+    <p class="right">1</p>
+    <p class="left">CPU 8pin / 4+4pin</p>
+    <p class="right">1</p>
+    <p class="left">Molex 4pin</p>
+    <p class="right">1</p>
+    <p class="left">PCI-E 8pin / 6+2pin</p>
+    <p class="right">1</p>
+    <p class="left">SATA 15pin</p>
+    <p class="right">7×</p>
+
+    <h3>Chlazení</h3>
+    <p class="left">Velikost ventilátoru</p>
+    <p class="right">120 mm</p>
+
+    <h3>Rozměry</h3>
+    <p class="left">Šířka</p>
+    <p class="right">150 mm (15 cm)</p>
+    <p class="left">Výška</p>
+    <p class="right">86 mm (8,6 cm)</p>
+    <p class="left">Hloubka</p>
+    <p class="right">140 mm (14 cm)</p>
+    <p class="left">Hmotnost</p>
+    <p class="right">2,14 kg (2 142 g)</p>
+  </div>
+</div>
+
+  <footer>
+    <div id="footer">
+      <div class="footer-content">
+        <img src="images/line.png">
+        <ul class="support">
+          <li><a href="#">PODPORA</a></li>
+        </ul>      
+        <p>Nejspolehlivější přeprodejce sestav a komponent.</p>
+        <ul class="socials">
+          <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+          <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+          <li><a href="#"><i class="fa fa-reddit"></i></a></li>
+          <li><a href="#"><i class="fa fa-youtube"></i></a></li>
+          <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+        </ul>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2024 </span>
+        <a href="#">Oficiální e-shopová stránka Dark Bytes</a>.
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      const checkbox = document.getElementById('checkbox');
+      const navbar = document.querySelector('.navbar');
+      const logo = document.getElementById('logo');
+
+      checkbox.addEventListener('change', function() {
+        if (this.checked) {
+          navbar.style.transition = '0.5s';
+          navbar.classList.add('active');
+          // Změna logo, když je menu aktivní
+          logo.src = 'images/logo.png';
+        } else {
+          navbar.style.transition = '0.5s';
+          navbar.classList.remove('active');
+          // Návrat původního loga, když menu není aktivní
+          logo.src = 'images/logo1.png';
+        }
+      });
+    });
+  </script>
+</body>
+</html>
