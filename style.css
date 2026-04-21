@@ -569,3 +569,121 @@ footer{
   padding-left: 0px;
   }
 }
+
+
+
+/* Schováme text, který zrovna není aktivní */
+#dark-mode-toggle:checked + .mode-switch .dark-text { display: none; }
+#dark-mode-toggle:not(:checked) + .mode-switch .light-text { display: none; }
+
+/* --- MAGIE DARK MODU --- */
+
+/* Pokud je checkbox zaškrtnutý, změníme barvy všeho, co následuje */
+#dark-mode-toggle:checked ~ * {
+  --main-dark: #1a1a1a;
+  --text-light: #e0dcd0;
+}
+
+#dark-mode-toggle:checked ~ .navbar,
+#dark-mode-toggle:checked ~ footer,
+#dark-mode-toggle:checked ~ section,
+#dark-mode-toggle:checked ~ div {
+  background-color: #1a1a1a !important;
+  color: #e0dcd0 !important;
+}
+
+/* Oprava barev textů v tmavém režimu */
+#dark-mode-toggle:checked ~ * h1,
+#dark-mode-toggle:checked ~ * h2,
+#dark-mode-toggle:checked ~ * h3,
+#dark-mode-toggle:checked ~ * p,
+#dark-mode-toggle:checked ~ * a,
+#dark-mode-toggle:checked ~ * .sort-button,
+#dark-mode-toggle:checked ~ * .filter-button {
+  color: #e0dcd0 !important;
+}
+
+/* Přidání plynulého přechodu pro barvy */
+* {
+  transition: background-color 0.4s ease, color 0.4s ease;
+}
+
+/* Pokud chceš v dark modu změnit i pozadí u navbaru (vyměnit obrázek) */
+#dark-mode-toggle:checked ~ .navbar {
+  background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url(images/background.png) !important;
+}
+
+/* --- FUNKČNOST PŘEPÍNAČE --- */
+
+/* Schováme samotný checkbox */
+.mode-checkbox {
+  display: none;
+}
+
+/* Styl pro tlačítko */
+/* Upravený styl pro tlačítko, aby zůstalo nahoře a neodjíždělo */
+.mode-button {
+  position: absolute; /* Změna z fixed na absolute */
+  top: 80px;          /* Vzdálenost od úplného vršku stránky */
+  right: 20px;        /* Vzdálenost od pravého okraje */
+  z-index: 9999;
+  background-color: #88806d;
+  color: #fff;
+  padding: 10px 15px;
+  border-radius: 30px;
+  cursor: pointer;
+  font-family: "Faculty Glyphic", sans-serif;
+  user-select: none;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  transition: transform 0.2s;
+}
+
+/* Zbytek kódu (logika checkboxu a barvy) zůstává stejný */
+
+.mode-button:active {
+  transform: scale(0.95);
+}
+
+/* Logika zobrazení textu v tlačítku */
+.sun-icon { display: none; }
+
+.mode-checkbox:checked + .mode-button .moon-icon { display: none; }
+.mode-checkbox:checked + .mode-button .sun-icon { display: inline; }
+
+/* --- ZMĚNA MODU (DARK MODE) --- */
+
+/* Pokud je checkbox zaškrtnutý, změníme barvy všech sourozenců pod ním */
+.mode-checkbox:checked ~ * {
+  /* Tady definujeme tmavé barvy */
+  background-color: #1a1a1a !important;
+  color: #e0dcd0 !important;
+  border-color: #444 !important;
+}
+
+/* Oprava pro obrázky a specifické prvky v dark modu */
+.mode-checkbox:checked ~ .navbar {
+  /* Ztmavíme pozadí navbaru pomocí filtru, aby obrázek nebyl tak ostrý */
+  background-blend-mode: overlay;
+  background-color: rgba(0, 0, 0, 0.7) !important;
+}
+
+/* Přinutíme texty v kartách produktů a tlačítka být světlé */
+.mode-checkbox:checked ~ * h1,
+.mode-checkbox:checked ~ * h2,
+.mode-checkbox:checked ~ * h3,
+.mode-checkbox:checked ~ * p,
+.mode-checkbox:checked ~ * a,
+.mode-checkbox:checked ~ * .sort-button,
+.mode-checkbox:checked ~ * .filter-button {
+  color: #e0dcd0 !important;
+}
+
+/* Aby overlay v produktech nebyl v dark modu bílý */
+.mode-checkbox:checked ~ * .content {
+  background: rgba(0, 0, 0, 0.8) !important;
+}
+
+/* Plynulý přechod barev (volitelné) */
+body * {
+  transition: background-color 0.4s ease, color 0.4s ease;
+}
