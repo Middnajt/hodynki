@@ -9,6 +9,12 @@
   
 </head>
 <body>
+  <input type="checkbox" id="dark-mode-toggle" class="mode-checkbox">
+
+<label for="dark-mode-toggle" class="mode-button">
+  <span class="moon-icon">🌙 Dark Mode</span>
+  <span class="sun-icon">☀️ Light Mode</span>
+</label>
   <nav>
     <div class="navbar">
       <div class="container nav-container">
@@ -147,6 +153,13 @@
       </div>
     </div>
   </footer>
+
+<input type="checkbox" id="dark-mode-toggle" style="display: none;">
+
+<label for="dark-mode-toggle" class="mode-switch">
+  <span class="light-text">Light Mode</span>
+  <span class="dark-text">Dark Mode</span>
+</label>
 
   <script>
     document.addEventListener('DOMContentLoaded', function() {
