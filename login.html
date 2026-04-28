@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="cs">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login</title>
+    <title>Přihlášit se</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -12,7 +12,7 @@
             align-items: center;
             height: 100vh;
             margin: 0;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            background: linear-gradient(135deg, #d6d9e4 0%, #c1bac7 100%);
         }
         .login-container {
             background: white;
@@ -60,6 +60,7 @@
             font-size: 16px;
             font-weight: bold;
             cursor: pointer;
+            transition: background 0.3s;
         }
         button:hover {
             background: #5568d3;
@@ -69,7 +70,7 @@
 <body>
     <div class="login-container">
         <h1>Login</h1>
-        <form>
+        <form action="index.html">
             <div class="form-group">
                 <label for="username">Uživatelské jméno</label>
                 <input type="text" id="username" name="username" required>
