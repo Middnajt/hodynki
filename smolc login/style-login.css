@@ -1,0 +1,206 @@
+@import url('https://fonts.googleapis.com/css2?family=Viaoda+Libre&display=swap');
+
+body {
+  margin: 0;
+  font-weight: 500;
+  font-style: normal;
+  font-family: "Viaoda Libre", serif;
+}
+
+.navbar {
+  border-bottom: 1px solid #000000;
+  padding-left: 10px;
+}
+
+/* TOP BAR */
+.top-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px 40px;
+  position: relative;
+}
+
+.search input {
+  border: none;
+  border-bottom: 1px solid black;
+  padding: 5px;
+  outline: none;
+  font-family: "Viaoda Libre", serif;
+  font-size: 17px;
+}
+
+.logo {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 35px;
+  letter-spacing: 2px;
+}
+
+.actions{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.actions a {
+  text-decoration: none;
+  color: black;
+  font-size: 15px;
+}
+
+.actions select {
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+/* MENU */
+.menu {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  padding: 10px 0;
+  font-size: 15px;
+}
+
+.menu a {
+  text-decoration: none;
+  color: black;
+}
+
+
+/* MOBIL */
+@media (max-width: 768px) {
+  .navbar {
+    padding-left: 0;
+  }
+
+  .top-bar {
+    padding: 15px 20px;
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .logo {
+    position: static;
+    transform: none;
+    font-size: 30px;
+    order: 1;
+  }
+
+  .search {
+    order: 2;
+    width: 100%;
+  }
+
+  .search input {
+    width: 100%;
+    box-sizing: border-box;
+    text-align: center;
+  }
+
+  .actions {
+    order: 3;
+  }
+
+  .actions a {
+    font-size: 16px;
+  }
+
+  .menu {
+    flex-wrap: wrap;
+    gap: 15px;
+    padding: 15px 10px;
+    font-size: 13px;
+  }
+
+  .menu a {
+    width: calc(50% - 15px);
+    text-align: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .logo {
+    font-size: 26px;
+  }
+
+  .menu a {
+    width: 100%;
+  }
+}
+
+/* WRAPPER */
+.login-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: calc(100vh - 120px);
+}
+
+/* BOX */
+.login-box {
+  padding: 45px 40px;
+  width: 340px;
+  border-radius: 5px;
+  text-align: center;
+}
+
+/* TITLE */
+.login-box h2 {
+  margin-bottom: 14px;
+  font-size: 22px;
+  font-weight: 500;
+}
+
+/* INPUTY - černé boxy */
+.login-box input {
+  width: 100%;
+  padding: 14px;
+  margin-bottom: 15px;
+  padding-left: 10px;
+  border: 1px solid #000;
+  font-size: 15px;
+  font-family: "Viaoda Libre", serif;
+  outline: none;
+  border-radius: 3px;
+}
+
+/* placeholder barva */
+.login-box input::placeholder {
+  color: #ccc;
+}
+
+/* focus efekt */
+.login-box input:focus {
+  border: 1px solid #444;
+}
+
+/* BUTTON - hnědý */
+.login-box button {
+  width: 100%;
+  padding: 14px;
+  background-color: #6b4f3b; /* hnědá */
+  font-family: "Viaoda Libre", serif;
+  color: white;
+  border: none;
+  font-size: 15px;
+  letter-spacing: 1px;
+  cursor: pointer;
+  border-radius: 3px;
+  transition: 0.3s;
+}
+
+/* hover efekt */
+.login-box button:hover {
+  background-color: #8a674f;
+}
+
+/* důležité pro přesné zarovnání */
+.login-box input,
+.login-box button {
+  width: 100%;
+  box-sizing: border-box; /* 🔥 KLÍČ */
+}
