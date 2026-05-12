@@ -1,0 +1,52 @@
+<?php
+session_start();
+?>
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+  <meta charset="UTF-8">
+  <title>MIKE SOFT</title>
+  <link rel="stylesheet" href="style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+
+<header class="navbar">
+
+  <!-- Top bar -->
+  <div class="top-bar">
+    <div class="search">
+      <input type="text" placeholder="Napište, co hledáte">
+    </div>
+
+    <div class="logo">
+      <a href="index.php" style="text-decoration: none; color: black">MIKE SOFT</a>
+    </div>
+
+    <div class="actions">
+      <?php if (isset($_SESSION['user'])): ?>
+        <!-- Přihlášený -->
+        <span> <?php echo htmlspecialchars($_SESSION['user']); ?></span>
+        <a href="logout.php">➜]</a>
+      <?php else: ?>
+        <!-- Nepřihlášený -->
+        <a href="login.php" id="loginBtn">Přihlášení</a>
+      <?php endif; ?>
+    </div>
+  </div>
+
+  <!-- Bottom menu -->
+  <nav class="menu">
+    <a href="#">ROLEX</a>
+    <a href="#">ROLEX MODELY</a>
+    <a href="#">NAŠE NABÍDKA</a>
+    <a href="#">VÝKUP HODINEK</a>
+    <a href="#">FAQ</a>
+    <a href="#">KONTAKTY</a>
+    <a href="#">O NÁS</a>
+    <a href="#">PŘÍSLUŠENSTVÍ</a>
+  </nav>
+</header>
+
+</body>
+</html>

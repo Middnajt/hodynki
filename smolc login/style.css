@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Viaoda+Libre&display=swap');
+
+body {
+  margin: 0;
+  font-weight: 500;
+  font-style: normal;
+  font-family: "Viaoda Libre", serif;
+}
+
+.navbar {
+  border-bottom: 1px solid #000000;
+  padding-left: 10px;
+}
+
+/* TOP BAR */
+.top-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px 40px;
+  position: relative;
+}
+
+.search input {
+  border: none;
+  border-bottom: 1px solid black;
+  padding: 5px;
+  outline: none;
+  font-family: "Viaoda Libre", serif;
+  font-size: 17px;
+}
+
+.logo {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 35px;
+  letter-spacing: 2px;
+}
+
+.actions{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.actions a {
+  text-decoration: none;
+  color: black;
+  font-size: 15px;
+}
+
+.actions select {
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+/* MENU */
+.menu {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  padding: 10px 0;
+  font-size: 15px;
+}
+
+.menu a {
+  text-decoration: none;
+  color: black;
+}
+
+
+/* MOBIL */
+@media (max-width: 768px) {
+  .navbar {
+    padding-left: 0;
+  }
+
+  .top-bar {
+    padding: 15px 20px;
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .logo {
+    position: static;
+    transform: none;
+    font-size: 30px;
+    order: 1;
+  }
+
+  .search {
+    order: 2;
+    width: 100%;
+  }
+
+  .search input {
+    width: 100%;
+    box-sizing: border-box;
+    text-align: center;
+  }
+
+  .actions {
+    order: 3;
+  }
+
+  .actions a {
+    font-size: 16px;
+  }
+
+  .menu {
+    flex-wrap: wrap;
+    gap: 15px;
+    padding: 15px 10px;
+    font-size: 13px;
+  }
+
+  .menu a {
+    width: calc(50% - 15px);
+    text-align: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .logo {
+    font-size: 26px;
+  }
+
+  .menu a {
+    width: 100%;
+  }
+}
